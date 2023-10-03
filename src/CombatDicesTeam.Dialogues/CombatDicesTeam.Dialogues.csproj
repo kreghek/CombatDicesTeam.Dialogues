@@ -41,4 +41,15 @@
       <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
     </ItemGroup>
 
+    <ItemGroup>
+        <!--
+            Add an icon.png next to the csproj:
+            - Supported format: png, jpg
+            - Recommended dimensions: 128x128
+            - Maximum size: 1MB
+        -->
+        <None Include="icon.png" Pack="true" PackagePath="" />
+        <None Include="README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+
 </Project>
