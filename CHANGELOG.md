@@ -4,11 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.1.0-alpha (2023-07-25)
+## Unreleased
   
-Basic combat engine with maneuvers and two-side battlefield like in a jRPGs.
+Basic dialogues engine.
 
 Features:
-*   Combat rounds when all of combatants complete turns.
-*   Damage, stun, add status, change combat movement damage effects.
-*   Two-side battle field to fight wall-by-wall.
+*   Generic dualogue classes.
+*   Aftermaths of dialogue nodes and options. You can use option aftermaths to change dialogue's state immidiatly. And you can use node aftermaths to play some decorative effects or change dialogue's state in-the-middle.
+*   Simple dialogue player.

@@ -1,3 +1,3 @@
-# CombatDicesTeam.Combats
+# CombatDicesTeam.Dialogues
 
-The framework to implement a turn-based tactical combats for indie game devs.
+The framework to implement a dialogue system for indie game devs.
