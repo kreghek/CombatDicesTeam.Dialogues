@@ -13,7 +13,8 @@ public sealed class DialoguePlayer<TParagraphConditionContext, TAftermathContext
 
         var conditionContext = _contextFactory.CreateParagraphConditionContext();
         CurrentTextFragments = GetTextBlockParagraphs(conditionContext);
-        CurrentOptions = _currentNode.Options.Where(x => x.HideConditions.All(c => c.Check(conditionContext))).ToArray();
+        CurrentOptions = _currentNode.Options.Where(x => x.HideConditions.All(c => c.Check(conditionContext)))
+            .ToArray();
     }
 
     public IReadOnlyCollection<DialogueOption<TParagraphConditionContext, TAftermathContext>> CurrentOptions
