@@ -6,6 +6,9 @@ public sealed class DialogueOption<TParagraphConditionContext, TAftermathContext
     {
         TextSid = textSid;
         Next = nextNode;
+        HideConditions = ArraySegment<IDialogueParagraphCondition<TParagraphConditionContext>>.Empty;
+        SelectConditions = ArraySegment<IDialogueParagraphCondition<TParagraphConditionContext>>.Empty;
+        
     }
 
     public IDialogueOptionAftermath<TAftermathContext>? Aftermath { get; init; }
